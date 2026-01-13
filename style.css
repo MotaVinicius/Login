@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(img.jpg);
+    background: url(img0.png);
     background-size: cover;
     background-position: center;
 }
@@ -24,8 +24,8 @@ body{
     border-radius: 10px;
     color: #fff;
     padding: 30px 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    backdrop-filter: blur(15px);
+    box-shadow: 0 0 18px rgba(240, 190, 25, 0.6);
+    backdrop-filter: blur(18px);
 }
 
 .container h1{
