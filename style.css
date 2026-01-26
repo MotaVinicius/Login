@@ -17,6 +17,37 @@ body{
     background-position: center;
 }
 
+.topbar{
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 0 18px rgba(240, 190, 25, 0.6);
+    display: flex;
+}
+
+.topbar-left{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #fff;
+    width: 50%;
+}
+.logo1{
+    font-size: 28px;
+    font-weight: 800;
+    color: #6e5912;
+    
+}
+.logo2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 5px;
+    color: #fff;
+}
+    
+
 .container {
     width: 420px;
     background-color: transparent;
@@ -105,14 +136,6 @@ body{
     transition: 0.5s;
 }
 
-
-
-
-
-
-
-
-
 .register-link{
     text-align: center;
     margin: 20px 0 15px;
@@ -128,3 +151,63 @@ body{
 .register-link a:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0 15px;
+    }
+
+    .topbar {
+        height: 60px;
+    }
+
+    .logo1 {
+        font-size: 22px;
+    }
+
+    .logo2 {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 25px 20px;
+        margin-top: 80px; /* evita ficar escondido atrás da topbar */
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .input-box {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 1366px) {
+
+    .container {
+        width: 380px;
+        padding: 28px 35px;
+    }
+
+    .container h1 {
+        font-size: 32px;
+    }
+
+    .logo1 {
+        font-size: 26px;
+    }
+
+    .logo2 {
+        font-size: 22px;
+    }
+}
+
